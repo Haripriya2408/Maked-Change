@@ -1,0 +1,131 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.mybookings-container {
+  display: flex;
+  width: 60%;
+  margin: 3%;
+  border-radius: 10px;
+  align-items: center;
+  transition: transform 0.5s;
+
+  color: black;
+}
+
+.mybookings-container:hover {
+  box-shadow: 1px 1px 15px rgb(161, 160, 160);
+  transform: scale(1.1);
+  text-decoration: none;
+}
+.wow:hover {
+  color: blueviolet;
+  text-decoration: none;
+}
+.image-container {
+  height: 9rem;
+  padding: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.booking-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.booking-information {
+  height: 9rem;
+  background-color: rgb(223, 223, 223);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.stay-information {
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+.info {
+  display: flex;
+  margin-right: 0.5rem;
+  color: grey;
+  font-size: 13px;
+}
+
+.icon {
+  color: grey;
+  font-size: 20px;
+}
+
+.booking-price {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+/* Payment */
+.paymentbtn {
+  width: 29rem;
+  background-color: #0e8b53;
+  border-radius: 10px;
+  padding: 0.2rem;
+  color: white;
+}
+
+.paymentbtn:hover {
+  background-color: rgba(177, 221, 184, 0.63);
+  border-color: rgb(2, 58, 11);
+  color: rgb(2, 58, 11);
+  font-weight: bold;
+}
+.interest-container {
+  margin-top: 10px; /* Adjust as needed */
+  margin-top: 10px; /* Adjust as needed */
+  display: flex;
+  justify-content: center; /* Centers the button horizontally */
+  align-items: center; /* Centers the button vertically */
+  height: 100px;
+}
+
+.heart-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 1rem; /* Adjust as needed */
+  padding: 0;
+}
+
+.heart {
+  font-size: 2rem; /* Adjust size of the heart icon as needed */
+  color: black; /* Default color for unfilled heart */
+  margin-right: 5px; /* Space between heart and text */
+  transition: color 0.3s;
+}
+
+.heart.filled {
+  color: red; /* Color for filled heart */
+}
+
+.heart-button:hover .heart {
+  color: #ff6666; /* Color on hover for heart */
+}
+
+.heart-button:focus {
+  outline: none;
+}
